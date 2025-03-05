@@ -6,8 +6,8 @@ const projectID = '1b7801d6-8a66-4be4-a442-89219d833dfc'; // Reemplaza con tu pr
 
 const App = () => {
   // Establecer credenciales predefinidas para pruebas
-  const testUsername = 'tuUsuario'; // Reemplaza con tu nombre de usuario deseado
-  const testPassword = 'tuContraseña'; // Reemplaza con tu contraseña deseada
+  const testUsername = 'alex'; // Reemplaza con tu nombre de usuario deseado
+  const testPassword = 'alumno'; // Reemplaza con tu contraseña deseada
 
   // Simular el almacenamiento de las credenciales en localStorage
   localStorage.setItem('username', testUsername);
