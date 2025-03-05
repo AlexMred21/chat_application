@@ -1,13 +1,17 @@
 import { ChatEngine } from 'react-chat-engine';
-
 import ChatFeed from './components/ChatFeed';
-import LoginForm from './components/LoginForm';
 import './App.css';
 
-const projectID = '1b7801d6-8a66-4be4-a442-89219d833dfc';
+const projectID = '1b7801d6-8a66-4be4-a442-89219d833dfc'; // Reemplaza con tu projectID si es necesario
 
 const App = () => {
-  if (!localStorage.getItem('username')) return <LoginForm />;
+  // Establecer credenciales predefinidas para pruebas
+  const testUsername = 'tuUsuario'; // Reemplaza con tu nombre de usuario deseado
+  const testPassword = 'tuContraseña'; // Reemplaza con tu contraseña deseada
+
+  // Simular el almacenamiento de las credenciales en localStorage
+  localStorage.setItem('username', testUsername);
+  localStorage.setItem('password', testPassword);
 
   return (
     <ChatEngine
@@ -20,7 +24,5 @@ const App = () => {
     />
   );
 };
-
-// infinite scroll, logout, more customizations...
 
 export default App;
